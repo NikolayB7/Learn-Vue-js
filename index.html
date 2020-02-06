@@ -15,8 +15,18 @@
         <h1>String: {{name}}</h1>
         <h1>Summ: {{10 + 60}}</h1>
         <h1>Number: {{number}}</h1>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" data-status="1" v-on:change="changeText" name="answer">
+                Men
+            </label>
+            <label class="radio">
+                <input type="radio" data-status="0" v-on:change="changeText" name="answer">
+                Women
+            </label>
+        </div>
         <h1>Method: {{sayHello()}}</h1>
-        <h1>If statement: {{ isOK ? 'I am ok' : 'I am not ok'}}</h1>
+        <h1>If statement: {{ isOK ? 'Man' : 'Women'}}</h1>
         <h1>Function : {{string.split('').reverse().join('')}}</h1>
     </div>
 

@@ -1,3 +1,7 @@
+var inp = document.querySelector('input[name="answer"]');
+
+
+
 new Vue({
     el: "#app",
     data: {
@@ -12,6 +16,19 @@ new Vue({
         },
         sayHello: function () {
             return 'I am function'
+        },
+        changeText: function () {
+            for (i = 0; i < inp.length; i++) {
+
+            }
+            console.log(inp.dataset.status);
+
+            if (inp.dataset.status.value === '1') {
+                console.log('1');
+            } else {
+                console.log('0');
+            }
+
         }
     }
 });

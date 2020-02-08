@@ -17,7 +17,7 @@
         <h1>Number: {{number}}</h1>
         <div class="control">
             <label class="radio">
-                <input type="radio" data-status="1" v-on:change="changeText" name="answer">
+                <input type="radio" data-status="1" v-on:change="changeText" name="answer" checked>
                 Men
             </label>
             <label class="radio">
@@ -25,8 +25,9 @@
                 Women
             </label>
         </div>
+        <h1>Your gender: {{ isOK ? 'Man' : 'Women'}}</h1>
         <h1>Method: {{sayHello()}}</h1>
-        <h1>If statement: {{ isOK ? 'Man' : 'Women'}}</h1>
+
         <h1>Function : {{string.split('').reverse().join('')}}</h1>
     </div>
 

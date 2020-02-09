@@ -10,6 +10,28 @@
 
 <body>
 
+    <div id="app">
+        <h2>Счетчик: {{counter}}</h2>
+        <button v-on:click="upCounter">Увеличить</button>
+
+        <hr>
+
+
+        <h2 v-on:mouseover="onHover">Счетчик2: {{counter}}</h2>
+        <button v-on:click="counter2++">Увеличить</button>
+
+        <hr>
+
+
+        <h2>{{title}}: {{counter}}</h2>
+        <button v-on:click="rizeCounter(5,'Изменено на 5',$event)">Увеличить на 5</button>
+        <button v-on:click="rizeCounter(10,'Изменено на 10',$event)">Увеличить на 10</button>
+
+
+
+
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>

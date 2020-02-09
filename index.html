@@ -29,6 +29,21 @@
         <h1>Method: {{sayHello()}}</h1>
 
         <h1>Function : {{string.split('').reverse().join('')}}</h1>
+
+        <hr>
+
+        <!-- Динамические атрибуты вывод HTML -->
+
+        <h2>
+            <a v-bind:href="url" target="_blunck">{{url}}</a>
+        </h2>
+
+        <h2 v-html="link"></h2>
+
+        <hr>
+
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>

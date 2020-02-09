@@ -2,10 +2,15 @@
 new Vue({
     el: "#app",
     data: {
+
         name: 'Vue!',
         number: 100,
         isOK: true,
-        string: 'My name'
+        string: 'My name',
+
+
+        url: 'http://seasonvar.ru/',
+        link: '<a href="http://google.com" target="_blunck">Google<a>'
     },
     methods: {
         changeName: function () {
